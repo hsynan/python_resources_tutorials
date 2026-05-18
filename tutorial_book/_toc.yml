@@ -6,3 +6,5 @@ root: intro
 chapters:
 - file: intro_netcdfs
 - file: plotting 
+- file: markdown
+- file: troubleshooting
