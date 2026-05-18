@@ -5,6 +5,7 @@ format: jb-book
 root: intro
 chapters:
 - file: intro_netcdfs
+- file: troubleshooting
+- file: mapping 
 - file: plotting 
 - file: markdown
-- file: troubleshooting
