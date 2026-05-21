@@ -4,9 +4,29 @@
 format: jb-book
 root: intro
 chapters:
-- file: EDAB_python_setup
 - file: intro_netcdfs
 - file: troubleshooting
 - file: mapping 
 - file: plotting 
 - file: markdown
+- file: EDAB_python_setup
+- file: intro_utilities
+  sections:
+  - file: dataset_utilities_intro
+  - file: date_utilities_intro
+  - file: file_utilities_intro
+  - file: function_utilities_intro
+  - file: map_utilities_intro
+  - file: mapping_utilities_intro
+  - file: notebook_utilities_intro
+  - file: period_utilities_intro
+  - file: plotting_utilities_intro
+  - file: product_utilities_intro
+  - file: statanom_utilities_intro
+- file: intro_calculations
+  sections:
+  - file: calculate_phytoplankton_size_classes
+  - file: calculate_daylength
+  - file: calculate_mapped_pixel_area
+  - file: calculate_primary_productivity
+  - file: calculate_annual_pp
