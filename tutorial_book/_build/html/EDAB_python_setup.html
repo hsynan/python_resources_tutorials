@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'EDAB_python_setup';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Intro to netcdfs" href="intro_netcdfs.html" />
-    <link rel="prev" title="Welcome!" href="intro.html" />
+    <link rel="next" title="Introduction to the EDAB utilities functions" href="intro_utilities.html" />
+    <link rel="prev" title="Intro to markdown" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -169,12 +169,20 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">EDAB python setup guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro_netcdfs.html">Intro to netcdfs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Debugging 101</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping.html">Intro to mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Intro to plotting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Intro to markdown</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">EDAB python setup guide</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="intro_utilities.html">Introduction to the EDAB utilities functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="calculate_phytoplankton_size_classes.html">Calculate Phytoplankton Size Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculate_daylength.html">Calculate Daylength</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculate_mapped_pixel_area.html">Calculate the area of a pixel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculate_primary_productivity.html">Calculate Primary Productivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculate_annual_pp.html">Calculate Annual Primary Production</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -367,8 +375,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions"><strong>Questions</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives"><strong>Objectives</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">❓ Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions"><strong>Questions</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives"><strong>Objectives</strong></a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-directory-structure">Set up directory structure</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">RESOURCES</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">DATASETS</a></li>
@@ -406,23 +417,25 @@
   <section class="tex2jax_ignore mathjax_ignore" id="edab-python-setup-guide">
 <h1>EDAB python setup guide<a class="headerlink" href="#edab-python-setup-guide" title="Link to this heading">#</a></h1>
 <div style="background-color: #f2f9e6; border: 1px solid #d2eeb4; border-radius: 4px; padding: 15px;">
-<h3 style="margin-top: 0; background-color: #daeebe; padding: 5px 10px; margin: -15px -15px 15px -15px; border-radius: 4px 4px 0 0; color: #2b542c;">
-    ❓ Overview
-</h3>  
+<div style="background-color: #daeebe; padding: 5px 10px; margin: -15px -15px 15px -15px; border-radius: 4px 4px 0 0; color: #2b542c;">
+<section id="overview">
+<h2>❓ Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+</div>
 <section id="questions">
-<h2><strong>Questions</strong><a class="headerlink" href="#questions" title="Link to this heading">#</a></h2>
+<h3><strong>Questions</strong><a class="headerlink" href="#questions" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>How do I set up my python environment to run EDAB processing code?</p></li>
 <li><p>What are the python utilities?</p></li>
 </ul>
 </section>
 <section id="objectives">
-<h2><strong>Objectives</strong><a class="headerlink" href="#objectives" title="Link to this heading">#</a></h2>
+<h3><strong>Objectives</strong><a class="headerlink" href="#objectives" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Set up the python environment</p></li>
 <li><p>Explore the utilties functions</p></li>
 </ul>
 </div></section>
+</section>
 <section id="set-up-directory-structure">
 <h2>Set up directory structure<a class="headerlink" href="#set-up-directory-structure" title="Link to this heading">#</a></h2>
 <p>The processing scripts expect a standardized directory structure.</p>
@@ -542,7 +555,7 @@
  &#39;project_root&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/python&#39;),
  &#39;python_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/python&#39;),
  &#39;satlogs_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/logs/satprocessing&#39;),
- &#39;timestamp&#39;: datetime.datetime(2026, 5, 20, 18, 59, 30, 541073),
+ &#39;timestamp&#39;: datetime.datetime(2026, 5, 20, 20, 7, 16, 496427),
  &#39;utilities_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/python/utilities&#39;),
  &#39;workflow_resources&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/workflow_resources&#39;)}
 </pre></div>
@@ -593,20 +606,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="markdown.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome!</p>
+        <p class="prev-next-title">Intro to markdown</p>
       </div>
     </a>
     <a class="right-next"
-       href="intro_netcdfs.html"
+       href="intro_utilities.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Intro to netcdfs</p>
+        <p class="prev-next-title">Introduction to the EDAB utilities functions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -628,8 +641,11 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions"><strong>Questions</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives"><strong>Objectives</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">❓ Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions"><strong>Questions</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives"><strong>Objectives</strong></a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-directory-structure">Set up directory structure</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">RESOURCES</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">DATASETS</a></li>
