@@ -4,6 +4,7 @@
 format: jb-book
 root: intro
 chapters:
+- file: EDAB_python_setup
 - file: intro_netcdfs
 - file: troubleshooting
 - file: mapping 
