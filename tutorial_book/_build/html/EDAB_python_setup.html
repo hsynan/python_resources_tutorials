@@ -32,7 +32,7 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
@@ -53,7 +53,7 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -176,6 +176,20 @@
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Intro to markdown</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">EDAB python setup guide</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="intro_utilities.html">Introduction to the EDAB utilities functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataset_utilities_intro.html">Introduction to the Dataset utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date_utilities_intro.html">Date Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_utilities_intro.html">File Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function_utilities_intro.html">Function Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map_utilities_intro.html">Map Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mapping_utilities_intro.html">Mapping Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebook_utilities_intro.html">Notebook Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="period_utilities_intro.html">Period Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotting_utilities_intro.html">Plotting Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product_utilities_intro.html">Product Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statanom_utilities_intro.html">Statistic and Anomaly Utilities</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="intro_calculations.html">Introduction to the Calculation Functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="calculate_phytoplankton_size_classes.html">Calculate Phytoplankton Size Classes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="calculate_daylength.html">Calculate Daylength</a></li>
 <li class="toctree-l2"><a class="reference internal" href="calculate_mapped_pixel_area.html">Calculate the area of a pixel</a></li>
@@ -548,16 +562,15 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;dataset_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/DATASETS&#39;),
- &#39;hostname&#39;: &#39;Mac.localdomain&#39;,
- &#39;lookuptable_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/workflow_resources/lookuptables&#39;),
- &#39;metadata_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/workflow_resources/metadata&#39;),
- &#39;project_root&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/python&#39;),
- &#39;python_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/python&#39;),
- &#39;satlogs_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/logs/satprocessing&#39;),
- &#39;timestamp&#39;: datetime.datetime(2026, 5, 20, 20, 7, 16, 496427),
- &#39;utilities_path&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/python/utilities&#39;),
- &#39;workflow_resources&#39;: PosixPath(&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/workflow_resources&#39;)}
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pprint</span><span class="w"> </span><span class="kn">import</span> <span class="n">pprint</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/Users/kimberly.hyde/Documents/nadata/RESOURCES/python/utilities/bootstrap&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">environment</span><span class="w"> </span><span class="kn">import</span> <span class="n">bootstrap_environment</span>  
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">pprint</span><span class="p">(</span><span class="n">bootstrap_environment</span><span class="p">())</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;environment&#39;
 </pre></div>
 </div>
 </div>
@@ -571,6 +584,15 @@
 <span class="n">env</span> <span class="o">=</span> <span class="n">bootstrap_environment</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_dates</span><span class="p">,</span> <span class="n">get_source_file_dates</span> 
 </pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">utilities.bootstrap.environment</span><span class="w"> </span><span class="kn">import</span> <span class="n">bootstrap_environment</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">bootstrap_environment</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_dates</span><span class="p">,</span> <span class="n">get_source_file_dates</span> 
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
