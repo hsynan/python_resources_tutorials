@@ -5,8 +5,8 @@ format: jb-book
 root: intro
 chapters:
 - file: Intro_python
-- file: Intro_pandas
 - file: Intro_Numpy
+- file: Intro_pandas
 - file: troubleshooting
 - file: intro_netcdfs
 - file: mapping 
